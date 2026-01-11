@@ -1,6 +1,11 @@
-<img width="2000" height="491" alt="Social Cover (6)" src="https://github.com/user-attachments/assets/4e256804-53ac-4173-bcff-81994d52bf5c" />
+<img width="2000" height="524" alt="Social Cover (9)" src="https://github.com/user-attachments/assets/cf66f045-c8be-494b-b696-b8d7e4fb709c" />
 
-
+<p align="center">
+ <a href="docs/i18n/README.es.md">🇪🇸 Español</a>
+ <a href="docs/i18n/README.fr.md">🇫🇷 Français</a>
+ <a href="docs/i18n/README.so.md">🇸🇴 Soomaali</a>
+ <a href="docs/i18n/README.ar.md">🇸🇦 العربية</a>
+</p>
 
 <p align="center">
   <strong>Memvid is a single-file memory layer for AI agents with instant retrieval and long-term memory.</strong><br/>
@@ -30,9 +35,12 @@
   <a href="https://discord.gg/2mynS7fcK7"><img src="https://img.shields.io/discord/1442910055233224745?style=flat-square&logo=discord&label=discord" alt="Discord" /></a>
 </p>
 
-<h2 align="center">⭐️ Leave a STAR to support the project ⭐️</h2>
+<p align="center">
+    <a href="https://trendshift.io/repositories/17293" target="_blank"><img src="https://trendshift.io/api/badge/repositories/17293" alt="memvid%2Fmemvid | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/</a>
 </p>
 
+<h2 align="center">⭐️ Leave a STAR to support the project ⭐️</h2>
+</p>
 
 ## What is Memvid?
 
@@ -53,11 +61,11 @@ Frames are grouped in a way that allows efficient compression, indexing, and par
 
 This frame-based design enables:
 
-- Append-only writes without modifying or corrupting existing data
-- Queries over past memory states
-- Timeline-style inspection of how knowledge evolves
-- Crash safety through committed, immutable frames
-- Efficient compression using techniques adapted from video encoding
+-   Append-only writes without modifying or corrupting existing data
+-   Queries over past memory states
+-   Timeline-style inspection of how knowledge evolves
+-   Crash safety through committed, immutable frames
+-   Efficient compression using techniques adapted from video encoding
 
 The result is a single file that behaves like a rewindable memory timeline for AI systems.
 
@@ -65,20 +73,20 @@ The result is a single file that behaves like a rewindable memory timeline for A
 
 ## Core Concepts
 
-- **Living Memory Engine**
-  Continuously append, branch, and evolve memory across sessions.
+-   **Living Memory Engine**
+    Continuously append, branch, and evolve memory across sessions.
 
-- **Capsule Context (`.mv2`)**
-  Self-contained, shareable memory capsules with rules and expiry.
+-   **Capsule Context (`.mv2`)**
+    Self-contained, shareable memory capsules with rules and expiry.
 
-- **Time-Travel Debugging**
-  Rewind, replay, or branch any memory state.
+-   **Time-Travel Debugging**
+    Rewind, replay, or branch any memory state.
 
-- **Smart Recall**
-  Sub-5ms local memory access with predictive caching.
+-   **Smart Recall**
+    Sub-5ms local memory access with predictive caching.
 
-- **Codec Intelligence**
-  Auto-selects and upgrades compression over time.
+-   **Codec Intelligence**
+    Auto-selects and upgrades compression over time.
 
 ---
 
@@ -191,19 +199,20 @@ Sample benchmark results (1000 embeddings, 768D):
 ---
 
 ## Use Cases
+
 Memvid is a portable, serverless memory layer that gives AI agents persistent memory and fast recall. Because it's model-agnostic, multi-modal, and works fully offline, developers are using Memvid across a wide range of real-world applications.
 
-- Long-Running AI Agents
-- Enterprise Knowledge Bases
-- Offline-First AI Systems
-- Codebase Understanding
-- Customer Support Agents
-- Workflow Automation
-- Sales and Marketing Copilots
-- Personal Knowledge Assistants
-- Medical, Legal, and Financial Agents
-- Auditable and Debuggable AI Workflows
-- Custom Applications
+-   Long-Running AI Agents
+-   Enterprise Knowledge Bases
+-   Offline-First AI Systems
+-   Codebase Understanding
+-   Customer Support Agents
+-   Workflow Automation
+-   Sales and Marketing Copilots
+-   Personal Knowledge Assistants
+-   Medical, Legal, and Financial Agents
+-   Auditable and Debuggable AI Workflows
+-   Custom Applications
 
 ---
 
@@ -211,12 +220,12 @@ Memvid is a portable, serverless memory layer that gives AI agents persistent me
 
 Use Memvid in your preferred language:
 
-| Package | Install | Links |
-|---------|---------|-------|
-| **CLI** | `npm install -g memvid-cli` | [![npm](https://img.shields.io/npm/v/memvid-cli?style=flat-square)](https://www.npmjs.com/package/memvid-cli) |
-| **Node.js SDK** | `npm install @memvid/sdk` | [![npm](https://img.shields.io/npm/v/@memvid/sdk?style=flat-square)](https://www.npmjs.com/package/@memvid/sdk) |
-| **Python SDK** | `pip install memvid-sdk` | [![PyPI](https://img.shields.io/pypi/v/memvid-sdk?style=flat-square)](https://pypi.org/project/memvid-sdk/) |
-| **Rust** | `cargo add memvid-core` | [![Crates.io](https://img.shields.io/crates/v/memvid-core?style=flat-square)](https://crates.io/crates/memvid-core) |
+| Package         | Install                     | Links                                                                                                               |
+| --------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **CLI**         | `npm install -g memvid-cli` | [![npm](https://img.shields.io/npm/v/memvid-cli?style=flat-square)](https://www.npmjs.com/package/memvid-cli)       |
+| **Node.js SDK** | `npm install @memvid/sdk`   | [![npm](https://img.shields.io/npm/v/@memvid/sdk?style=flat-square)](https://www.npmjs.com/package/@memvid/sdk)     |
+| **Python SDK**  | `pip install memvid-sdk`    | [![PyPI](https://img.shields.io/pypi/v/memvid-sdk?style=flat-square)](https://pypi.org/project/memvid-sdk/)         |
+| **Rust**        | `cargo add memvid-core`     | [![Crates.io](https://img.shields.io/crates/v/memvid-core?style=flat-square)](https://crates.io/crates/memvid-core) |
 
 ---
 
@@ -224,7 +233,7 @@ Use Memvid in your preferred language:
 
 ### Requirements
 
-- **Rust 1.85.0+** — Install from [rustup.rs](https://rustup.rs)
+-   **Rust 1.85.0+** — Install from [rustup.rs](https://rustup.rs)
 
 ### Add to Your Project
 
@@ -235,16 +244,16 @@ memvid-core = "2.0"
 
 ### Feature Flags
 
-| Feature | Description |
-|---------|-------------|
-| `lex` | Full-text search with BM25 ranking (Tantivy) |
-| `pdf_extract` | Pure Rust PDF text extraction |
-| `vec` | Vector similarity search (HNSW + ONNX) |
-| `clip` | CLIP visual embeddings for image search |
-| `whisper` | Audio transcription with Whisper |
-| `temporal_track` | Natural language date parsing ("last Tuesday") |
-| `parallel_segments` | Multi-threaded ingestion |
-| `encryption` | Password-based encryption capsules (.mv2e) |
+| Feature             | Description                                    |
+| ------------------- | ---------------------------------------------- |
+| `lex`               | Full-text search with BM25 ranking (Tantivy)   |
+| `pdf_extract`       | Pure Rust PDF text extraction                  |
+| `vec`               | Vector similarity search (HNSW + ONNX)         |
+| `clip`              | CLIP visual embeddings for image search        |
+| `whisper`           | Audio transcription with Whisper               |
+| `temporal_track`    | Natural language date parsing ("last Tuesday") |
+| `parallel_segments` | Multi-threaded ingestion                       |
+| `encryption`        | Password-based encryption capsules (.mv2e)     |
 
 Enable features as needed:
 
